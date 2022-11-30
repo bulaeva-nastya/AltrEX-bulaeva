@@ -1,0 +1,667 @@
+/* обычный шрифт */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+/* жирный шрифт */
+@font-face {
+    font-family: 'Roboto bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body {
+    background-color: #FFFFFF;
+    /* цвет фона */
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* шапка */
+header {
+    justify-content: space-around;
+    /* как будет располагаться */
+    display: flex;
+    /* тип отображения */
+    flex-direction: row;
+    /* то как будет отображаться, его направление*/
+    align-items: center;
+    /* выравнивание элментов по центру */
+    background-color: #FFFFFF;
+}
+
+header ul {
+    list-style: none;
+    /* стиль списка */
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    margin: 20px;
+    font-weight: 400;
+    /* начертание шрифта */
+    font-size: 14px;
+    /* размер шрифта */
+    color: #000000;
+}
+
+#bold {
+    font-weight: bold;
+    /* шрифт жирный */
+}
+
+.language {
+    margin: 0;
+    box-sizing: border-box;
+    /* ширина блока */
+    width: 66px;
+    height: 34px;
+    border: 1px solid #E2E2E2;
+    border-radius: 50px;
+    /* скругление уголков рамки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    margin: 4px;
+}
+
+.arrow {
+    background-image: url('../img/Arrow\ -\ Down\ 2.png');
+    height: 12px;
+    width: 12px;
+    background-size: cover;
+    /* размер фона */
+}
+
+/* конец шапки */
+
+/* штука после шапки */
+main {
+    display: flex;
+    align-items: center;
+    background-color: #F8F8F8;
+    justify-content: space-around;
+    /* выравнивание содержимого */
+}
+
+main .btn {
+    margin-top: 22px;
+    /* верхняя граница */
+    background: #2C2B2B;
+    /* фон */
+    border-radius: 50px;
+    width: 178px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .btn p {
+    font-family: 'Roboto';
+    font-style: normal;
+    /* стиль шрифта */
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 162.19%;
+    /* высота строки */
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+main .phone {
+    background-image: url('../img/Laptop+\ 1.png');
+    background-size: auto;
+    /* размер фона */
+    width: 783px;
+    height: 489px;
+}
+
+main .text {
+    color: #000000;
+    padding-left: 80px;
+    margin-top: 40px;
+}
+
+.text h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Roboto bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+}
+
+.text p {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    width: 350px;
+
+}
+
+/* конец штуки после шапки*/
+.futures {
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20 px;
+}
+
+/*4 блока Git codes*/
+.futures .item {
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    margin-right: 18px;
+    flex-direction: column;
+    width: 250px;
+    height: 127px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 15px;
+}
+
+.futures:first-child {
+    margin-left: 66px;
+}
+
+.futures:last-child {
+    margin-right: 66px;
+}
+
+.item h2 {
+    font-style: normal;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 162.19%;
+    margin-left: 35px;
+}
+
+.item p {
+    margin-left: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 162.19%;
+    color: #414141;
+}
+
+.item .img1 {
+    margin-left: 30px;
+    width: 35px;
+    margin-bottom: 10px;
+    height: 35px;
+    background-image: url('../img/list_check.png');
+}
+
+/*Конец 4 блока Git codes*/
+
+/*Таблица*/
+th,
+td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+
+table {
+    width: 86%;
+    border-spacing: 0px;
+    padding: 0;
+    border-collapse: collapse;
+
+}
+
+td {
+    padding: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(196, 196, 196, 0.27);
+    ;
+}
+
+.tab1 {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table thead th {
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    background: rgba(196, 196, 196, 0.12);
+    font-size: 14px;
+}
+
+
+
+.table thead {
+    border-radius: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.table thead tr th:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+.table thead tr th:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.bitcoin {
+    background-image: url('../img/Image.png');
+    width: 40px;
+    height: 40px;
+}
+
+.currency {
+    background-image: url('../img/Currency.png');
+    width: 40px;
+    height: 40px;
+}
+
+.el {
+    display: flex;
+}
+
+.table-header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #000000;
+}
+
+.table-el-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 14px;
+}
+
+.table-caption {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: rgba(130, 141, 153, 0.6);
+}
+
+.green {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #8AC135;
+}
+
+.red {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #D45A77;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 162.19%;
+    color: #000000;
+    margin-top: 55px;
+    text-align: left;
+    margin-left: 100px;
+    padding: 20px;
+}
+
+/*конец таблицы*/
+
+
+/*ur services*/
+.services {
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.service-block-1 {
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    padding: 50px;
+    margin-bottom: 32px;
+}
+
+.service-container {
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.service-block-1 .image-preview {
+    background-image: url('../img/img.png');
+    width: 432px;
+    height: 310px;
+}
+
+.service-block-1 .content {
+    width: 542px;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-right: 123px;
+}
+
+.service-block-1 .content h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 162.19%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.service-block-1 .content .text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    height: 92px;
+    color: #414141;
+}
+
+.service-block-1 .content .btn {
+    margin-top: 30px;
+    background: #2C2B2B;
+    border-radius: 50px;
+    width: 178px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-block-1 .content .btn p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 162.19%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.service-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 162.19%;
+    color: #000000;
+    margin-left: 120px;
+    padding-top: 155px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.imagepad {
+    margin-right: 123px;
+}
+
+.textpad {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    height: 92px;
+    color: #414141;
+}
+
+.cont {
+    width: 542px;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+}
+
+.cont h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 162.19%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.cont .text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    height: 92px;
+    color: #414141;
+}
+
+.cont .btn {
+    margin-top: 30px;
+    background: #2C2B2B;
+    border-radius: 50px;
+    width: 178px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont .btn p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 162.19%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*Конец */
+
+
+/*Блок с картой*/
+.start-traiding-container {
+    margin-top: 30px;
+}
+.start-traiding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin-bottom: 340px;
+}
+
+.start-traiding h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 162.19%;
+    text-align: center;
+    color: #000000;
+}
+
+.start-traiding .text {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 162.19%;
+    text-align: center;
+    color: #6C6C6C;
+}
+
+.start-traiding .btn {
+    margin-top: 30px;
+    background: #2C2B2B;
+    border-radius: 50px;
+    width: 178px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-traiding .btn p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 162.19%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.map {
+    width: 1060px;
+    height: 537.77px;
+    background-image: url('../img/Huge\ Global.png');
+    position: absolute;
+    margin-top: 210px;
+    z-index: 1;
+}
+
+/*блок с картой*/
+
+/*footer*/
+footer {
+    z-index: 23;
+    /*положение позиционированного элемента*/
+    height: 509px;
+    background: #141223;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 100px;
+}
+
+footer ul {
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #D7D7D7;
+    margin-bottom: 55px;
+}
+
+footer ul>li:first-child {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+footer ul li {
+    margin: 10px;
+}
+
+footer h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.left-el {
+    margin-left: 0px;
+    margin-right: 100px;
+    margin-bottom: 70px;
+}
+
+.left-el .text {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    width: 340px;
+}
+
+.copy {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #AFB5C0;
+}
+
+.social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sc1 {
+    background-image: url('../img/Facebook.png');
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+}
+
+.sc2 {
+    background-image: url('../img/Twitter.png');
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+}
+
+.sc3 {
+    background-size: cover;
+    background-image: url('../img/Instagram.png');
+    width: 65px;
+    height: 65px;
+}
